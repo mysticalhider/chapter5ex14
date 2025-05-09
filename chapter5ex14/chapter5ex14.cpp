@@ -8,24 +8,16 @@
 #include <algorithm>// searched and found that i could use this to sort https://www.geeksforgeeks.org/sort-c-stl/
 using namespace std;
 
-double numofstudents()
+vector<string> readnames()
 {
-	int numofs;
-	cout << "How many students do you have in your calss?" << endl;
-	cin >> numofs;
-	return numofs;
-}
-
-vector<string> readnames(int numofs)
-{
-	ifstream infile("C:/Users/perri/Downloads/names.txt");
+	ifstream infile("C:/Users/perri/Downloads/LineUp.txt");
 	vector<string> names = {};
 	string line;
 	if (!infile) 
 	{ 
 		cout << "error reading file. exiting" << endl; 
 	}
-	for (int i = 0; i < numofs && getline(infile,line); i ++)
+	while (getline(infile,line))
 	{
 		names.push_back(line);
 	}
@@ -38,15 +30,8 @@ vector<string> readnames(int numofs)
 int main()
 {
 	bool exit = 0;
-	double num;
 	do {
-		num = numofstudents();
-		if (num < 0 || num > 25)
-		{
-			cout << "that is not a valid selection, please enter in a new number" << endl;
-			num = numofstudents();
-		}
-		vector<string> names = readnames(num);
+		vector<string> names = readnames();
 		for (auto i : names)
 		{
 			cout << i << endl;
