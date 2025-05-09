@@ -41,7 +41,7 @@ int main()
 	double num;
 	do {
 		num = numofstudents();
-		if (num < 0 || num> 65)
+		if (num < 0 || num > 25)
 		{
 			cout << "that is not a valid selection, please enter in a new number" << endl;
 			num = numofstudents();
