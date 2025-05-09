@@ -1,5 +1,9 @@
-// chapter5ex14.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+File Name : chapter5ex14.cpp
+Programmer : Perrin
+Requirements :
+updated main so it reads a diffrent file and goes to end of list
+*/
 
 #include <iostream>
 #include <fstream>
