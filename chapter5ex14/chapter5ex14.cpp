@@ -1,5 +1,18 @@
-// chapter5ex14.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+File Name: chapter5ex14.cpp
+Programmer: Perrin
+Requirements: 
+
+Write a program that prompts the user to enter the number of students in the class, then loops to read that many names.
+
+Once all the names have been read, it reports which student would be at the front of the line and
+
+which one would be at the end of the line. You may assume that no two students have the same name.
+
+Input Validation: Do not accept a number less than 1 or greater than 25 for the number of students.
+
+i ended up just sorting the whole list
+*/
 
 #include <iostream>
 #include <fstream>
